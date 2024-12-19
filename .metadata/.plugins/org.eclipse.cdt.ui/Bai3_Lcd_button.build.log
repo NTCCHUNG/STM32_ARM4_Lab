@@ -1,0 +1,29 @@
+19:42:16 **** Incremental Build of configuration Debug for project Bai3_Lcd_button ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/fsm.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/fsm.d" -MT"Core/Src/fsm.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/fsm.o"
+In file included from ../Core/Inc/led.h:6,
+                 from ../Core/Inc/fsm.h:6,
+                 from ../Core/Src/fsm.c:1:
+../Core/Inc/lcd.h:71:13: warning: 'LCD_WR_DATA' declared 'static' but never defined [-Wunused-function]
+   71 | static void LCD_WR_DATA(uint16_t data);
+      |             ^~~~~~~~~~~
+../Core/Inc/lcd.h:72:17: warning: 'LCD_RD_DATA' declared 'static' but never defined [-Wunused-function]
+   72 | static uint16_t LCD_RD_DATA(void);
+      |                 ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Bai3_Lcd_button.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\ADMINISTRATOR\Education\241\HTN\Labs\STM32_ARM4_Lab\Chuong_3\Ex\STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bai3_Lcd_button.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Bai3_Lcd_button.elf
+ 
+arm-none-eabi-size   Bai3_Lcd_button.elf 
+arm-none-eabi-objdump -h -S  Bai3_Lcd_button.elf  > "Bai3_Lcd_button.list"
+arm-none-eabi-objcopy  -O binary  Bai3_Lcd_button.elf  "Bai3_Lcd_button.bin"
+   text	   data	    bss	    dec	    hex	filename
+  39104	     56	   2144	  41304	   a158	Bai3_Lcd_button.elf
+Finished building: default.size.stdout
+ 
+Finished building: Bai3_Lcd_button.bin
+ 
+Finished building: Bai3_Lcd_button.list
+ 
+
+19:42:17 Build Finished. 0 errors, 2 warnings. (took 863ms)
+

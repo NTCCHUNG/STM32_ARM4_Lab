@@ -1,0 +1,5 @@
+led.c:84:6:box_rec	40	static
+led.c:109:6:init_traffic_light	40	static
+led.c:253:6:control_traffic_light	32	static
+led.c:328:6:update_led_buf	40	static
+led.c:346:6:LCD_DisplayNum	40	static

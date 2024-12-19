@@ -1,0 +1,24 @@
+16:25:50 **** Incremental Build of configuration Debug for project Ex1_LAB3 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Core/Src/main.c:32:
+../Core/Inc/lcd.h:82:13: warning: 'LCD_WR_DATA' declared 'static' but never defined [-Wunused-function]
+   82 | static void LCD_WR_DATA(uint16_t data);
+      |             ^~~~~~~~~~~
+../Core/Inc/lcd.h:83:17: warning: 'LCD_RD_DATA' declared 'static' but never defined [-Wunused-function]
+   83 | static uint16_t LCD_RD_DATA(void);
+      |                 ^~~~~~~~~~~
+arm-none-eabi-gcc -o "Ex1_LAB3.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\ADMINISTRATOR\Education\241\HTN\Labs\STM32_ARM4_Lab2\Ex1_LAB3\STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Ex1_LAB3.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Ex1_LAB3.elf
+ 
+arm-none-eabi-size   Ex1_LAB3.elf 
+arm-none-eabi-objdump -h -S  Ex1_LAB3.elf  > "Ex1_LAB3.list"
+arm-none-eabi-objcopy  -O binary  Ex1_LAB3.elf  "Ex1_LAB3.bin"
+   text	   data	    bss	    dec	    hex	filename
+  43624	     36	   1884	  45544	   b1e8	Ex1_LAB3.elf
+Finished building: default.size.stdout
+ 
+Finished building: Ex1_LAB3.bin
+ 
+Finished building: Ex1_LAB3.list
+ 

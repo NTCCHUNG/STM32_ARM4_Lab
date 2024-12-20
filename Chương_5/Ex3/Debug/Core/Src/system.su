@@ -1,0 +1,4 @@
+system.c:13:6:test_lcd	24	static
+system.c:23:6:displayTime	24	static
+system.c:34:6:system_init	8	static
+system.c:48:6:system_loop	8	static

@@ -1,0 +1,8 @@
+my_clock.c:15:6:Clock_FSM	8	static
+my_clock.c:47:6:Update_DS3231	4	static
+my_clock.c:60:6:Display_Clock	8	static
+my_clock.c:73:6:Display_Alarm	8	static
+my_clock.c:86:6:Alarm_Check	24	static
+my_clock.c:97:6:Button_Mode_FSM	8	static
+my_clock.c:110:6:Button_Set_FSM	8	static
+my_clock.c:128:6:Blink_Display	16	static

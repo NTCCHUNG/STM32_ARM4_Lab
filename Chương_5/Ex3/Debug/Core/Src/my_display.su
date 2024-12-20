@@ -1,0 +1,9 @@
+my_display.c:23:6:init_box	4	static
+my_display.c:47:6:dis_sec	40	static
+my_display.c:61:6:dis_min	40	static
+my_display.c:76:6:dis_hour	40	static
+my_display.c:90:6:dis_day	40	static
+my_display.c:110:6:dis_date	40	static
+my_display.c:125:6:dis_month	40	static
+my_display.c:140:6:dis_year	40	static
+my_display.c:149:6:display_text	32	static

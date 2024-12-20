@@ -1,0 +1,14 @@
+../Core/Src/my_clock.c:47:6:alarm	7
+../Core/Src/my_clock.c:62:6:fsm_clock	5
+../Core/Src/my_clock.c:86:6:fsm_alarm	32
+../Core/Src/my_clock.c:215:6:fsm_changing	36
+../Core/Src/my_clock.c:357:6:reset_str	1
+../Core/Src/my_clock.c:366:6:button0_fsm	10
+../Core/Src/my_clock.c:408:6:button2_fsm	21
+../Core/Src/my_clock.c:493:6:increase_value	17
+../Core/Src/my_clock.c:554:6:button1_fsm	11
+../Core/Src/my_clock.c:595:6:update_ds3231_register	1
+../Core/Src/my_clock.c:610:6:update_clock	1
+../Core/Src/my_clock.c:624:6:display_all_clock	1
+../Core/Src/my_clock.c:638:6:display_mode	5
+../Core/Src/my_clock.c:656:6:display_all_alarm	1

@@ -1,0 +1,10 @@
+10:02:23 **** Incremental Build of configuration Debug for project Bai4_I2C_Realtimeclock ****
+make -j8 all 
+arm-none-eabi-gcc -o "Bai4_I2C_Realtimeclock.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\ADMINISTRATOR\Education\241\HTN\Labs\STM32_ARM4_Lab\Chương_4\Bai4_I2C_Realtimeclock\STM32F407ZGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Bai4_I2C_Realtimeclock.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+d:\installation_directory\stm32cubeide_1.7.0\stm32cubeide\plugins\com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.9-2020-q2-update.win32_2.0.0.202105311346\tools\arm-none-eabi\bin\ld.exe: cannot open linker script file D:\ADMINISTRATOR\Education\241\HTN\Labs\STM32_ARM4_Lab\Ch????ng_4\Bai4_I2C_Realtimeclock\STM32F407ZGTX_FLASH.ld: No such file or directory
+collect2.exe: error: ld returned 1 exit status
+make: *** [makefile:65: Bai4_I2C_Realtimeclock.elf] Error 1
+"make -j8 all" terminated with exit code 2. Build might be incomplete.
+
+10:02:23 Build Failed. 2 errors, 0 warnings. (took 269ms)
+
